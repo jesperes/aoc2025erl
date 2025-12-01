@@ -24,6 +24,8 @@ solve_part1(Filename) ->
       end, {0, StartPos}, binary:split(Bin, <<"\n">>, [global])),
   TotalZeroCount.
 
+%% Slow part 2 solution where we simply rotate the dial one click at a
+%% time and check when we pass the zero position.
 solve_part2(Filename) ->
   {ok, Bin} = file:read_file(Filename),
   Period = 100,
