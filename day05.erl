@@ -60,7 +60,6 @@ count_ranges([{A1, A2}|Rest], N) ->
 merge_ranges_until_done(Ranges) ->
     SortedRanges = lists:sort(Ranges),
     Ranges0 = merge_ranges(SortedRanges, []),
-    io:format("Merged ranges: ~p~n", [lists:sort(Ranges0)]),
     if
         length(Ranges0) == length(Ranges) ->
             Ranges;
