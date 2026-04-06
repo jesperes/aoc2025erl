@@ -1,3 +1,7 @@
 day*.txt
 *.beam
 *~
+_build/
+aoc2025
+.aoc_session
+bench/*.json

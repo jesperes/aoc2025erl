@@ -1,0 +1,6 @@
+{application, aoc2025erl, [
+    {description, "Advent of Code 2025"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {applications, [kernel, stdlib, inets, ssl]}
+]}.
